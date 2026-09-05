@@ -17,8 +17,8 @@ assembled into a GitHub Pages artifact and its reproducibility is enforced.
 
 Complete the build entry point so it copies checked-in static assets and generated
 data into one output directory. Add end-to-end tests comparing two builds byte for
-byte. Add a GitHub Actions workflow that builds that directory and deploys it with
-the supported GitHub Pages actions. Document local build and artifact inspection.
+byte. GitHub Pages is configured by the repository administrator to publish the
+committed `/docs` directory, so document and generate that source directly.
 
 ## Non-goals
 
@@ -37,10 +37,11 @@ the supported GitHub Pages actions. Document local build and artifact inspection
 - A documented explicit build command creates a self-contained static output
   directory containing HTML, CSS, JavaScript, and graph data.
 - Two builds from identical inputs produce identical relative paths and bytes.
-- The workflow invokes the repository build command, uploads only generated output,
-  and deploys through GitHub Pages actions with least-necessary permissions.
-- Documentation states that a repository administrator must enable GitHub Pages
-  with GitHub Actions if it is not already enabled.
+- A documented Pages command writes the generated site into `/docs` without
+  deleting Markdown documentation, and that directory contains the Pages entry
+  point and graph data.
+- Documentation states that a repository administrator must select the `main`
+  branch and `/docs` folder as the GitHub Pages source.
 - No generated artifact contains absolute paths, timestamps, credentials, or
   machine-local data.
 
@@ -59,7 +60,10 @@ GitHub Actions deployment and Pages URL in the issue evidence record.
 
 - `src/agent_demo/context_atlas/build.py`
 - `tests/test_context_atlas_build.py`
-- `.github/workflows/deploy-pages.yml`
+- `docs/index.html`
+- `docs/styles.css`
+- `docs/app.js`
+- `docs/graph.json`
 - `README.md`
 - `docs/evidence/issue-N.md` (after publication and successful completion)
 
@@ -74,7 +78,7 @@ GitHub Actions deployment and Pages URL in the issue evidence record.
 | Read | `web/index.html` | Required static asset. |
 | Edit | `src/agent_demo/context_atlas/build.py` | Package assets and graph data. |
 | Create | `tests/test_context_atlas_build.py` | End-to-end reproducibility check. |
-| Create | `.github/workflows/deploy-pages.yml` | GitHub Pages deployment. |
+| Edit | `docs/` generated assets | GitHub Pages source directory. |
 | Edit | `README.md` | Local build and Pages documentation. |
 | Create | `docs/evidence/issue-N.md` | Completion provenance for the published issue. |
 | Test | `scripts/check.cmd` | Complete repository gate. |

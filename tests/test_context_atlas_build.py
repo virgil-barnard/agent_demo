@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from agent_demo.context_atlas.build import build_graph
+from agent_demo.context_atlas.build import build_graph, publish_pages
 
 
 def _write(root: Path, relative_path: str, content: str) -> None:
@@ -41,3 +41,31 @@ def test_build_creates_reproducible_self_contained_pages_artifact(tmp_path: Path
         if path.is_file()
     }
     assert str(tmp_path).encode() not in (first / "graph.json").read_bytes()
+
+
+def test_publish_pages_updates_docs_assets_without_deleting_documents(tmp_path: Path) -> None:
+    _repository(tmp_path)
+    _write(tmp_path, "docs/keep.md", "# Keep this documentation\n")
+
+    first = publish_pages(tmp_path, tmp_path / "docs")
+    first_bytes = first.read_bytes()
+    second = publish_pages(tmp_path, tmp_path / "docs")
+
+    assert first == second == tmp_path / "docs" / "graph.json"
+    assert first_bytes == second.read_bytes()
+    assert (tmp_path / "docs" / "keep.md").read_text(
+        encoding="utf-8"
+    ) == "# Keep this documentation\n"
+    assert sorted(
+        path.relative_to(tmp_path / "docs").as_posix()
+        for path in (tmp_path / "docs").rglob("*")
+        if path.is_file()
+    ) == [
+        "app.js",
+        "assets/logo.txt",
+        "graph.json",
+        "index.html",
+        "keep.md",
+        "requirements.md",
+        "styles.css",
+    ]

@@ -15,6 +15,16 @@ Inspect `build/` to find `index.html`, `styles.css`, `app.js`, and `graph.json`.
 Serve that directory with any static-file server to use the application; it makes
 no runtime network request.
 
-The deployment workflow runs this same build command, uploads only `build/`, and
-deploys it using GitHub Pages. A repository administrator must enable GitHub
-Pages with **GitHub Actions** as its source if it is not already enabled.
+## Publish to GitHub Pages from `/docs`
+
+This repository's Pages source is the `docs/` directory on `main`. Regenerate
+the Pages files before committing changes to repository content:
+
+```bat
+.venv\Scripts\python.exe -m agent_demo.context_atlas.build --repository-root . --pages-dir docs
+```
+
+The command preserves Markdown documentation while writing `docs/index.html`,
+`docs/styles.css`, `docs/app.js`, and `docs/graph.json`. A repository
+administrator must select the `main` branch and `/docs` folder in GitHub Pages
+settings for this source to publish.

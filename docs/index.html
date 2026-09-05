@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Context Atlas</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="eyebrow">Context Atlas</p>
+      <h1>Repository provenance graph</h1>
+      <p>Inspect requirements, issues, implementation, tests, and their evidence.</p>
+    </header>
+    <main>
+      <section class="controls" aria-label="Graph filters">
+        <fieldset>
+          <legend>Artifact types</legend>
+          <div id="kind-filters" class="filter-options"></div>
+        </fieldset>
+        <label>
+          GitHub state
+          <select id="github-filter">
+            <option value="all">All states</option>
+            <option value="draft">Draft</option>
+            <option value="open">Open</option>
+            <option value="closed">Closed</option>
+          </select>
+        </label>
+        <label>
+          Implementation state
+          <select id="implementation-filter">
+            <option value="all">All states</option>
+            <option value="planned">Planned</option>
+            <option value="in_progress">In progress</option>
+            <option value="complete">Complete</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="legend" aria-label="Graph legend">
+        <h2>Legend</h2>
+        <div id="kind-legend" class="legend-group" aria-label="Artifact types"></div>
+        <div class="legend-group" aria-label="GitHub state">
+          <span class="legend-label">GitHub state</span>
+          <span class="state-swatch github-draft">Draft</span>
+          <span class="state-swatch github-open">Open</span>
+          <span class="state-swatch github-closed">Closed</span>
+        </div>
+        <div class="legend-group" aria-label="Implementation state">
+          <span class="legend-label">Implementation state</span>
+          <span class="state-swatch implementation-planned">Planned</span>
+          <span class="state-swatch implementation-in_progress">In progress</span>
+          <span class="state-swatch implementation-complete">Complete</span>
+        </div>
+      </section>
+
+      <div class="atlas-layout">
+        <section class="graph-panel" aria-label="Provenance graph">
+          <p id="graph-status" role="status">Loading graph data…</p>
+          <svg id="graph" viewBox="0 0 960 640" role="img" aria-labelledby="graph-title graph-description">
+            <title id="graph-title">Context Atlas provenance graph</title>
+            <desc id="graph-description">Select a node to inspect its relationships and provenance.</desc>
+          </svg>
+        </section>
+        <aside id="details" class="details" aria-live="polite">
+          <h2>Selection details</h2>
+          <p>Select a visible node to inspect its stable identity, path, state, and evidence.</p>
+        </aside>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

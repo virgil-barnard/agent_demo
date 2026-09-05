@@ -107,7 +107,16 @@ def _prepare_output_directory(root: Path, output_dir: Path) -> Path:
     return resolved_output
 
 
-def build_graph(repository_root: Path, output_dir: Path) -> Path:
+def _pages_directory(root: Path, pages_dir: Path) -> Path:
+    """Validate the configured `/docs` Pages source without deleting its inputs."""
+    resolved_pages = pages_dir.resolve()
+    expected_pages = (root / "docs").resolve()
+    if resolved_pages != expected_pages:
+        raise ValidationError("pages directory must be the repository docs directory")
+    return resolved_pages
+
+
+def build_graph(repository_root: Path, output_dir: Path, *, replace_output: bool = True) -> Path:
     """Build a self-contained Pages artifact and return its ``graph.json`` path."""
     root = repository_root.resolve()
     if not (root / "docs").is_dir():
@@ -365,7 +374,11 @@ def build_graph(repository_root: Path, output_dir: Path) -> Path:
         ],
         "context_profiles": context_profiles,
     }
-    artifact_dir = _prepare_output_directory(root, output_dir)
+    artifact_dir = (
+        _prepare_output_directory(root, output_dir)
+        if replace_output
+        else _pages_directory(root, output_dir)
+    )
     _copy_static_assets(root, artifact_dir)
     output_path = artifact_dir / "graph.json"
     output_path.write_text(
@@ -376,13 +389,23 @@ def build_graph(repository_root: Path, output_dir: Path) -> Path:
     return output_path
 
 
+def publish_pages(repository_root: Path, pages_dir: Path) -> Path:
+    """Write Pages assets into the configured `/docs` source directory."""
+    return build_graph(repository_root, pages_dir, replace_output=False)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Build deterministic Context Atlas graph data.")
     parser.add_argument("--repository-root", type=Path, required=True)
-    parser.add_argument("--output-dir", type=Path, required=True)
+    target = parser.add_mutually_exclusive_group(required=True)
+    target.add_argument("--output-dir", type=Path)
+    target.add_argument("--pages-dir", type=Path)
     arguments = parser.parse_args(argv)
     try:
-        build_graph(arguments.repository_root, arguments.output_dir)
+        if arguments.pages_dir:
+            publish_pages(arguments.repository_root, arguments.pages_dir)
+        else:
+            build_graph(arguments.repository_root, arguments.output_dir)
     except ValidationError as error:
         parser.error(str(error))
     return 0

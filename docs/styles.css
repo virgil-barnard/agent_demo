@@ -1,0 +1,58 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  color: #172033;
+  background: #f5f7fb;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+.site-header, main { max-width: 1280px; margin: 0 auto; padding: 1.25rem; }
+.site-header { background: #172033; color: #fff; max-width: none; padding-left: max(1.25rem, calc((100% - 1280px) / 2 + 1.25rem)); }
+.site-header h1 { margin: 0; }
+.site-header p { margin-bottom: 0; }
+.eyebrow { color: #9dd6ff; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.controls, .legend { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem; margin-bottom: 1rem; padding: 1rem; background: #fff; border: 1px solid #d8deea; border-radius: .5rem; }
+fieldset { border: 0; margin: 0; padding: 0; }
+legend, .legend h2 { font-size: 1rem; font-weight: 700; margin: 0 0 .5rem; }
+.filter-options, .legend-group { display: flex; flex-wrap: wrap; gap: .5rem; }
+.filter-options label { font-size: .9rem; }
+select { display: block; margin-top: .25rem; padding: .25rem; }
+.legend { align-items: center; }
+.legend h2 { width: 100%; }
+.legend-label { font-weight: 700; }
+.kind-swatch, .state-swatch { border-radius: .25rem; padding: .2rem .45rem; color: #172033; font-size: .85rem; }
+.kind-document { background: #c9d6ff; }
+.kind-requirement { background: #bdebd5; }
+.kind-issue { background: #ffe4a8; }
+.kind-source { background: #e2c9ff; }
+.kind-test { background: #ffd0dc; }
+.github-draft { border: 2px dashed #64748b; }
+.github-open { border: 2px solid #167d3e; }
+.github-closed { border: 2px solid #6b2a88; }
+.implementation-planned { box-shadow: inset 0 -4px #64748b; }
+.implementation-in_progress { box-shadow: inset 0 -4px #e27400; }
+.implementation-complete { box-shadow: inset 0 -4px #167d3e; }
+.atlas-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr); gap: 1rem; }
+.graph-panel, .details { background: #fff; border: 1px solid #d8deea; border-radius: .5rem; padding: 1rem; }
+#graph { display: block; width: 100%; min-height: 40rem; background: #fbfcff; }
+.edge { stroke: #8490a8; stroke-width: 1.5; }
+.node { cursor: pointer; outline: none; }
+.node circle { stroke: #172033; stroke-width: 2; }
+.node:focus circle, .node.selected circle { stroke-width: 5; }
+.node text { font-size: 12px; pointer-events: none; }
+.node .github-draft { stroke-dasharray: 4 3; }
+.node .github-open { stroke: #167d3e; }
+.node .github-closed { stroke: #6b2a88; }
+.node .implementation-planned { stroke-width: 2; }
+.node .implementation-in_progress { stroke-width: 4; }
+.node .implementation-complete { stroke-width: 6; }
+.detail-list { display: grid; grid-template-columns: max-content 1fr; gap: .4rem .75rem; }
+.detail-list dt { font-weight: 700; }
+.edge-list { padding-left: 1.25rem; }
+.context-explorer { border-top: 1px solid #d8deea; margin-top: 1rem; padding-top: 1rem; }
+.context-explorer input { margin-left: .25rem; max-width: 7rem; padding: .25rem; }
+.context-result ol { margin-top: .25rem; padding-left: 1.5rem; }
+.context-result li { margin-bottom: .45rem; overflow-wrap: anywhere; }
+code { overflow-wrap: anywhere; }
+@media (max-width: 800px) { .atlas-layout { grid-template-columns: 1fr; } #graph { min-height: 30rem; } }

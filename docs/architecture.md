@@ -80,9 +80,11 @@ no external CDN.
 
 A module entry point accepts a repository root and output directory, validates
 the input contract, generates graph data, and copies static assets. It replaces
-the output directory so every artifact contains only current build output. The
-deployment workflow invokes the same build command, uploads only its output
-directory, and deploys it with GitHub Pages actions.
+ordinary output directories so every artifact contains only current build output.
+For GitHub Pages configured to publish from `/docs`, `--pages-dir docs` preserves
+the Markdown inputs and writes the static entry point, assets, and graph JSON to
+that directory. Committing those generated files publishes the site without a
+deployment workflow.
 
 The provenance-index entry point is:
 

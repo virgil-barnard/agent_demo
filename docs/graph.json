@@ -1,0 +1,2102 @@
+{
+  "artifacts": [
+    {
+      "estimated_cost": 1163,
+      "id": "artifact:document:docs/architecture.md",
+      "kind": "document",
+      "line_end": 104,
+      "line_start": 1,
+      "node_id": "document:docs/architecture.md",
+      "path": "docs/architecture.md"
+    },
+    {
+      "estimated_cost": 212,
+      "id": "artifact:document:docs/decisions/DEC-CA-001-reproducible-issue-source.md",
+      "kind": "document",
+      "line_end": 25,
+      "line_start": 1,
+      "node_id": "document:docs/decisions/DEC-CA-001-reproducible-issue-source.md",
+      "path": "docs/decisions/DEC-CA-001-reproducible-issue-source.md"
+    },
+    {
+      "estimated_cost": 227,
+      "id": "artifact:document:docs/decisions/DEC-CA-002-static-site-and-build.md",
+      "kind": "document",
+      "line_end": 26,
+      "line_start": 1,
+      "node_id": "document:docs/decisions/DEC-CA-002-static-site-and-build.md",
+      "path": "docs/decisions/DEC-CA-002-static-site-and-build.md"
+    },
+    {
+      "estimated_cost": 94,
+      "id": "artifact:document:docs/evidence/README.md",
+      "kind": "document",
+      "line_end": 8,
+      "line_start": 1,
+      "node_id": "document:docs/evidence/README.md",
+      "path": "docs/evidence/README.md"
+    },
+    {
+      "estimated_cost": 621,
+      "id": "artifact:document:docs/evidence/issue-2.md",
+      "kind": "document",
+      "line_end": 49,
+      "line_start": 1,
+      "node_id": "document:docs/evidence/issue-2.md",
+      "path": "docs/evidence/issue-2.md"
+    },
+    {
+      "estimated_cost": 616,
+      "id": "artifact:document:docs/evidence/issue-3.md",
+      "kind": "document",
+      "line_end": 54,
+      "line_start": 1,
+      "node_id": "document:docs/evidence/issue-3.md",
+      "path": "docs/evidence/issue-3.md"
+    },
+    {
+      "estimated_cost": 700,
+      "id": "artifact:document:docs/evidence/issue-4.md",
+      "kind": "document",
+      "line_end": 53,
+      "line_start": 1,
+      "node_id": "document:docs/evidence/issue-4.md",
+      "path": "docs/evidence/issue-4.md"
+    },
+    {
+      "estimated_cost": 701,
+      "id": "artifact:document:docs/evidence/issue-5.md",
+      "kind": "document",
+      "line_end": 60,
+      "line_start": 1,
+      "node_id": "document:docs/evidence/issue-5.md",
+      "path": "docs/evidence/issue-5.md"
+    },
+    {
+      "estimated_cost": 717,
+      "id": "artifact:document:docs/issues/CA-001-planning-baseline.md",
+      "kind": "document",
+      "line_end": 84,
+      "line_start": 1,
+      "node_id": "document:docs/issues/CA-001-planning-baseline.md",
+      "path": "docs/issues/CA-001-planning-baseline.md"
+    },
+    {
+      "estimated_cost": 869,
+      "id": "artifact:document:docs/issues/CA-002-provenance-index.md",
+      "kind": "document",
+      "line_end": 85,
+      "line_start": 1,
+      "node_id": "document:docs/issues/CA-002-provenance-index.md",
+      "path": "docs/issues/CA-002-provenance-index.md"
+    },
+    {
+      "estimated_cost": 739,
+      "id": "artifact:document:docs/issues/CA-003-static-graph-application.md",
+      "kind": "document",
+      "line_end": 82,
+      "line_start": 1,
+      "node_id": "document:docs/issues/CA-003-static-graph-application.md",
+      "path": "docs/issues/CA-003-static-graph-application.md"
+    },
+    {
+      "estimated_cost": 832,
+      "id": "artifact:document:docs/issues/CA-004-context-budget-explorer.md",
+      "kind": "document",
+      "line_end": 86,
+      "line_start": 1,
+      "node_id": "document:docs/issues/CA-004-context-budget-explorer.md",
+      "path": "docs/issues/CA-004-context-budget-explorer.md"
+    },
+    {
+      "estimated_cost": 900,
+      "id": "artifact:document:docs/issues/CA-005-pages-release.md",
+      "kind": "document",
+      "line_end": 91,
+      "line_start": 1,
+      "node_id": "document:docs/issues/CA-005-pages-release.md",
+      "path": "docs/issues/CA-005-pages-release.md"
+    },
+    {
+      "estimated_cost": 533,
+      "id": "artifact:document:docs/plan.md",
+      "kind": "document",
+      "line_end": 29,
+      "line_start": 1,
+      "node_id": "document:docs/plan.md",
+      "path": "docs/plan.md"
+    },
+    {
+      "estimated_cost": 776,
+      "id": "artifact:document:docs/requirements.md",
+      "kind": "document",
+      "line_end": 74,
+      "line_start": 1,
+      "node_id": "document:docs/requirements.md",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 517,
+      "id": "artifact:document:docs/vision.md",
+      "kind": "document",
+      "line_end": 45,
+      "line_start": 1,
+      "node_id": "document:docs/vision.md",
+      "path": "docs/vision.md"
+    },
+    {
+      "estimated_cost": 717,
+      "id": "artifact:issue:CA-001",
+      "kind": "issue",
+      "line_end": 84,
+      "line_start": 1,
+      "node_id": "issue:CA-001",
+      "path": "docs/issues/CA-001-planning-baseline.md"
+    },
+    {
+      "estimated_cost": 869,
+      "id": "artifact:issue:CA-002",
+      "kind": "issue",
+      "line_end": 85,
+      "line_start": 1,
+      "node_id": "issue:CA-002",
+      "path": "docs/issues/CA-002-provenance-index.md"
+    },
+    {
+      "estimated_cost": 739,
+      "id": "artifact:issue:CA-003",
+      "kind": "issue",
+      "line_end": 82,
+      "line_start": 1,
+      "node_id": "issue:CA-003",
+      "path": "docs/issues/CA-003-static-graph-application.md"
+    },
+    {
+      "estimated_cost": 832,
+      "id": "artifact:issue:CA-004",
+      "kind": "issue",
+      "line_end": 86,
+      "line_start": 1,
+      "node_id": "issue:CA-004",
+      "path": "docs/issues/CA-004-context-budget-explorer.md"
+    },
+    {
+      "estimated_cost": 900,
+      "id": "artifact:issue:CA-005",
+      "kind": "issue",
+      "line_end": 91,
+      "line_start": 1,
+      "node_id": "issue:CA-005",
+      "path": "docs/issues/CA-005-pages-release.md"
+    },
+    {
+      "estimated_cost": 68,
+      "id": "artifact:requirement:REQ-CA-001",
+      "kind": "requirement",
+      "line_end": 10,
+      "line_start": 5,
+      "node_id": "requirement:REQ-CA-001",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 70,
+      "id": "artifact:requirement:REQ-CA-002",
+      "kind": "requirement",
+      "line_end": 16,
+      "line_start": 11,
+      "node_id": "requirement:REQ-CA-002",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 78,
+      "id": "artifact:requirement:REQ-CA-003",
+      "kind": "requirement",
+      "line_end": 23,
+      "line_start": 17,
+      "node_id": "requirement:REQ-CA-003",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 68,
+      "id": "artifact:requirement:REQ-CA-004",
+      "kind": "requirement",
+      "line_end": 29,
+      "line_start": 24,
+      "node_id": "requirement:REQ-CA-004",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 73,
+      "id": "artifact:requirement:REQ-CA-005",
+      "kind": "requirement",
+      "line_end": 36,
+      "line_start": 30,
+      "node_id": "requirement:REQ-CA-005",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 75,
+      "id": "artifact:requirement:REQ-CA-006",
+      "kind": "requirement",
+      "line_end": 42,
+      "line_start": 37,
+      "node_id": "requirement:REQ-CA-006",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 71,
+      "id": "artifact:requirement:REQ-CA-007",
+      "kind": "requirement",
+      "line_end": 48,
+      "line_start": 43,
+      "node_id": "requirement:REQ-CA-007",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 56,
+      "id": "artifact:requirement:REQ-CA-008",
+      "kind": "requirement",
+      "line_end": 54,
+      "line_start": 49,
+      "node_id": "requirement:REQ-CA-008",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 204,
+      "id": "artifact:requirement:REQ-CA-009",
+      "kind": "requirement",
+      "line_end": 74,
+      "line_start": 55,
+      "node_id": "requirement:REQ-CA-009",
+      "path": "docs/requirements.md"
+    },
+    {
+      "estimated_cost": 30,
+      "id": "artifact:source:src/agent_demo/__init__.py",
+      "kind": "source",
+      "line_end": 5,
+      "line_start": 1,
+      "node_id": "source:src/agent_demo/__init__.py",
+      "path": "src/agent_demo/__init__.py"
+    },
+    {
+      "estimated_cost": 21,
+      "id": "artifact:source:src/agent_demo/context_atlas/__init__.py",
+      "kind": "source",
+      "line_end": 3,
+      "line_start": 1,
+      "node_id": "source:src/agent_demo/context_atlas/__init__.py",
+      "path": "src/agent_demo/context_atlas/__init__.py"
+    },
+    {
+      "estimated_cost": 3721,
+      "id": "artifact:source:src/agent_demo/context_atlas/build.py",
+      "kind": "source",
+      "line_end": 415,
+      "line_start": 1,
+      "node_id": "source:src/agent_demo/context_atlas/build.py",
+      "path": "src/agent_demo/context_atlas/build.py"
+    },
+    {
+      "estimated_cost": 954,
+      "id": "artifact:source:src/agent_demo/context_atlas/context_budget.py",
+      "kind": "source",
+      "line_end": 124,
+      "line_start": 1,
+      "node_id": "source:src/agent_demo/context_atlas/context_budget.py",
+      "path": "src/agent_demo/context_atlas/context_budget.py"
+    },
+    {
+      "estimated_cost": 554,
+      "id": "artifact:source:src/agent_demo/context_atlas/model.py",
+      "kind": "source",
+      "line_end": 85,
+      "line_start": 1,
+      "node_id": "source:src/agent_demo/context_atlas/model.py",
+      "path": "src/agent_demo/context_atlas/model.py"
+    },
+    {
+      "estimated_cost": 1451,
+      "id": "artifact:source:src/agent_demo/context_atlas/parse.py",
+      "kind": "source",
+      "line_end": 151,
+      "line_start": 1,
+      "node_id": "source:src/agent_demo/context_atlas/parse.py",
+      "path": "src/agent_demo/context_atlas/parse.py"
+    },
+    {
+      "estimated_cost": 634,
+      "id": "artifact:test:tests/test_context_atlas_build.py",
+      "kind": "test",
+      "line_end": 71,
+      "line_start": 1,
+      "node_id": "test:tests/test_context_atlas_build.py",
+      "path": "tests/test_context_atlas_build.py"
+    },
+    {
+      "estimated_cost": 1717,
+      "id": "artifact:test:tests/test_context_atlas_index.py",
+      "kind": "test",
+      "line_end": 168,
+      "line_start": 1,
+      "node_id": "test:tests/test_context_atlas_index.py",
+      "path": "tests/test_context_atlas_index.py"
+    },
+    {
+      "estimated_cost": 356,
+      "id": "artifact:test:tests/test_context_atlas_web_contract.py",
+      "kind": "test",
+      "line_end": 35,
+      "line_start": 1,
+      "node_id": "test:tests/test_context_atlas_web_contract.py",
+      "path": "tests/test_context_atlas_web_contract.py"
+    },
+    {
+      "estimated_cost": 741,
+      "id": "artifact:test:tests/test_context_budget.py",
+      "kind": "test",
+      "line_end": 96,
+      "line_start": 1,
+      "node_id": "test:tests/test_context_budget.py",
+      "path": "tests/test_context_budget.py"
+    },
+    {
+      "estimated_cost": 28,
+      "id": "artifact:test:tests/test_environment.py",
+      "kind": "test",
+      "line_end": 5,
+      "line_start": 1,
+      "node_id": "test:tests/test_environment.py",
+      "path": "tests/test_environment.py"
+    }
+  ],
+  "context_profiles": [
+    {
+      "candidates": [
+        {
+          "artifact_id": "artifact:issue:CA-001",
+          "evidence_route": [
+            "issue:CA-001"
+          ],
+          "mandatory": true,
+          "rank": 1,
+          "rationale": "selected issue",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-001-planning-baseline.md",
+            "tier": 1
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-001",
+          "evidence_route": [
+            "issue:CA-001",
+            "requirement:REQ-CA-001"
+          ],
+          "mandatory": false,
+          "rank": 2,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 5,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-009",
+          "evidence_route": [
+            "issue:CA-001",
+            "requirement:REQ-CA-009"
+          ],
+          "mandatory": false,
+          "rank": 3,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 55,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:document:docs/requirements.md",
+          "evidence_route": [
+            "issue:CA-001",
+            "requirement:REQ-CA-001",
+            "document:docs/requirements.md"
+          ],
+          "mandatory": false,
+          "rank": 4,
+          "rationale": "supporting document reached by requirement provenance",
+          "score": {
+            "anchor": 1,
+            "kind": "document",
+            "path": "docs/requirements.md",
+            "tier": 5
+          }
+        }
+      ],
+      "issue_id": "issue:CA-001"
+    },
+    {
+      "candidates": [
+        {
+          "artifact_id": "artifact:issue:CA-002",
+          "evidence_route": [
+            "issue:CA-002"
+          ],
+          "mandatory": true,
+          "rank": 1,
+          "rationale": "selected issue",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-002-provenance-index.md",
+            "tier": 1
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-001",
+          "evidence_route": [
+            "issue:CA-002",
+            "requirement:REQ-CA-001"
+          ],
+          "mandatory": false,
+          "rank": 2,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 5,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-003",
+          "evidence_route": [
+            "issue:CA-002",
+            "requirement:REQ-CA-003"
+          ],
+          "mandatory": false,
+          "rank": 3,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 17,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-008",
+          "evidence_route": [
+            "issue:CA-002",
+            "requirement:REQ-CA-008"
+          ],
+          "mandatory": false,
+          "rank": 4,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 49,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-009",
+          "evidence_route": [
+            "issue:CA-002",
+            "requirement:REQ-CA-009"
+          ],
+          "mandatory": false,
+          "rank": 5,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 55,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:source:src/agent_demo/context_atlas/__init__.py",
+          "evidence_route": [
+            "issue:CA-002",
+            "source:src/agent_demo/context_atlas/__init__.py"
+          ],
+          "mandatory": false,
+          "rank": 6,
+          "rationale": "declared implementation",
+          "score": {
+            "anchor": 1,
+            "kind": "source",
+            "path": "src/agent_demo/context_atlas/__init__.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:source:src/agent_demo/context_atlas/build.py",
+          "evidence_route": [
+            "issue:CA-002",
+            "source:src/agent_demo/context_atlas/build.py"
+          ],
+          "mandatory": false,
+          "rank": 7,
+          "rationale": "declared implementation",
+          "score": {
+            "anchor": 1,
+            "kind": "source",
+            "path": "src/agent_demo/context_atlas/build.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:source:src/agent_demo/context_atlas/model.py",
+          "evidence_route": [
+            "issue:CA-002",
+            "source:src/agent_demo/context_atlas/model.py"
+          ],
+          "mandatory": false,
+          "rank": 8,
+          "rationale": "declared implementation",
+          "score": {
+            "anchor": 1,
+            "kind": "source",
+            "path": "src/agent_demo/context_atlas/model.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:source:src/agent_demo/context_atlas/parse.py",
+          "evidence_route": [
+            "issue:CA-002",
+            "source:src/agent_demo/context_atlas/parse.py"
+          ],
+          "mandatory": false,
+          "rank": 9,
+          "rationale": "declared implementation",
+          "score": {
+            "anchor": 1,
+            "kind": "source",
+            "path": "src/agent_demo/context_atlas/parse.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:test:tests/test_context_atlas_index.py",
+          "evidence_route": [
+            "issue:CA-002",
+            "test:tests/test_context_atlas_index.py"
+          ],
+          "mandatory": false,
+          "rank": 10,
+          "rationale": "declared test",
+          "score": {
+            "anchor": 1,
+            "kind": "test",
+            "path": "tests/test_context_atlas_index.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:issue:CA-001",
+          "evidence_route": [
+            "issue:CA-002",
+            "issue:CA-001"
+          ],
+          "mandatory": false,
+          "rank": 11,
+          "rationale": "declared dependency",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-001-planning-baseline.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:document:docs/requirements.md",
+          "evidence_route": [
+            "issue:CA-002",
+            "requirement:REQ-CA-001",
+            "document:docs/requirements.md"
+          ],
+          "mandatory": false,
+          "rank": 12,
+          "rationale": "supporting document reached by requirement provenance",
+          "score": {
+            "anchor": 1,
+            "kind": "document",
+            "path": "docs/requirements.md",
+            "tier": 5
+          }
+        }
+      ],
+      "issue_id": "issue:CA-002"
+    },
+    {
+      "candidates": [
+        {
+          "artifact_id": "artifact:issue:CA-003",
+          "evidence_route": [
+            "issue:CA-003"
+          ],
+          "mandatory": true,
+          "rank": 1,
+          "rationale": "selected issue",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-003-static-graph-application.md",
+            "tier": 1
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-004",
+          "evidence_route": [
+            "issue:CA-003",
+            "requirement:REQ-CA-004"
+          ],
+          "mandatory": false,
+          "rank": 2,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 24,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-005",
+          "evidence_route": [
+            "issue:CA-003",
+            "requirement:REQ-CA-005"
+          ],
+          "mandatory": false,
+          "rank": 3,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 30,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:test:tests/test_context_atlas_web_contract.py",
+          "evidence_route": [
+            "issue:CA-003",
+            "test:tests/test_context_atlas_web_contract.py"
+          ],
+          "mandatory": false,
+          "rank": 4,
+          "rationale": "declared test",
+          "score": {
+            "anchor": 1,
+            "kind": "test",
+            "path": "tests/test_context_atlas_web_contract.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:issue:CA-002",
+          "evidence_route": [
+            "issue:CA-003",
+            "issue:CA-002"
+          ],
+          "mandatory": false,
+          "rank": 5,
+          "rationale": "declared dependency",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-002-provenance-index.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-001",
+          "evidence_route": [
+            "issue:CA-003",
+            "issue:CA-002",
+            "requirement:REQ-CA-001"
+          ],
+          "mandatory": false,
+          "rank": 6,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 5,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-003",
+          "evidence_route": [
+            "issue:CA-003",
+            "issue:CA-002",
+            "requirement:REQ-CA-003"
+          ],
+          "mandatory": false,
+          "rank": 7,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 17,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-008",
+          "evidence_route": [
+            "issue:CA-003",
+            "issue:CA-002",
+            "requirement:REQ-CA-008"
+          ],
+          "mandatory": false,
+          "rank": 8,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 49,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-009",
+          "evidence_route": [
+            "issue:CA-003",
+            "issue:CA-002",
+            "requirement:REQ-CA-009"
+          ],
+          "mandatory": false,
+          "rank": 9,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 55,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:document:docs/requirements.md",
+          "evidence_route": [
+            "issue:CA-003",
+            "requirement:REQ-CA-004",
+            "document:docs/requirements.md"
+          ],
+          "mandatory": false,
+          "rank": 10,
+          "rationale": "supporting document reached by requirement provenance",
+          "score": {
+            "anchor": 1,
+            "kind": "document",
+            "path": "docs/requirements.md",
+            "tier": 5
+          }
+        }
+      ],
+      "issue_id": "issue:CA-003"
+    },
+    {
+      "candidates": [
+        {
+          "artifact_id": "artifact:issue:CA-004",
+          "evidence_route": [
+            "issue:CA-004"
+          ],
+          "mandatory": true,
+          "rank": 1,
+          "rationale": "selected issue",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-004-context-budget-explorer.md",
+            "tier": 1
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-006",
+          "evidence_route": [
+            "issue:CA-004",
+            "requirement:REQ-CA-006"
+          ],
+          "mandatory": false,
+          "rank": 2,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 37,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-007",
+          "evidence_route": [
+            "issue:CA-004",
+            "requirement:REQ-CA-007"
+          ],
+          "mandatory": false,
+          "rank": 3,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 43,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:source:src/agent_demo/context_atlas/context_budget.py",
+          "evidence_route": [
+            "issue:CA-004",
+            "source:src/agent_demo/context_atlas/context_budget.py"
+          ],
+          "mandatory": false,
+          "rank": 4,
+          "rationale": "declared implementation",
+          "score": {
+            "anchor": 1,
+            "kind": "source",
+            "path": "src/agent_demo/context_atlas/context_budget.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:test:tests/test_context_budget.py",
+          "evidence_route": [
+            "issue:CA-004",
+            "test:tests/test_context_budget.py"
+          ],
+          "mandatory": false,
+          "rank": 5,
+          "rationale": "declared test",
+          "score": {
+            "anchor": 1,
+            "kind": "test",
+            "path": "tests/test_context_budget.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:issue:CA-002",
+          "evidence_route": [
+            "issue:CA-004",
+            "issue:CA-002"
+          ],
+          "mandatory": false,
+          "rank": 6,
+          "rationale": "declared dependency",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-002-provenance-index.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:issue:CA-003",
+          "evidence_route": [
+            "issue:CA-004",
+            "issue:CA-003"
+          ],
+          "mandatory": false,
+          "rank": 7,
+          "rationale": "declared dependency",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-003-static-graph-application.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-001",
+          "evidence_route": [
+            "issue:CA-004",
+            "issue:CA-002",
+            "requirement:REQ-CA-001"
+          ],
+          "mandatory": false,
+          "rank": 8,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 5,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-003",
+          "evidence_route": [
+            "issue:CA-004",
+            "issue:CA-002",
+            "requirement:REQ-CA-003"
+          ],
+          "mandatory": false,
+          "rank": 9,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 17,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-004",
+          "evidence_route": [
+            "issue:CA-004",
+            "issue:CA-003",
+            "requirement:REQ-CA-004"
+          ],
+          "mandatory": false,
+          "rank": 10,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 24,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-005",
+          "evidence_route": [
+            "issue:CA-004",
+            "issue:CA-003",
+            "requirement:REQ-CA-005"
+          ],
+          "mandatory": false,
+          "rank": 11,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 30,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-008",
+          "evidence_route": [
+            "issue:CA-004",
+            "issue:CA-002",
+            "requirement:REQ-CA-008"
+          ],
+          "mandatory": false,
+          "rank": 12,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 49,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-009",
+          "evidence_route": [
+            "issue:CA-004",
+            "issue:CA-002",
+            "requirement:REQ-CA-009"
+          ],
+          "mandatory": false,
+          "rank": 13,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 55,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:document:docs/requirements.md",
+          "evidence_route": [
+            "issue:CA-004",
+            "requirement:REQ-CA-006",
+            "document:docs/requirements.md"
+          ],
+          "mandatory": false,
+          "rank": 14,
+          "rationale": "supporting document reached by requirement provenance",
+          "score": {
+            "anchor": 1,
+            "kind": "document",
+            "path": "docs/requirements.md",
+            "tier": 5
+          }
+        }
+      ],
+      "issue_id": "issue:CA-004"
+    },
+    {
+      "candidates": [
+        {
+          "artifact_id": "artifact:issue:CA-005",
+          "evidence_route": [
+            "issue:CA-005"
+          ],
+          "mandatory": true,
+          "rank": 1,
+          "rationale": "selected issue",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-005-pages-release.md",
+            "tier": 1
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-001",
+          "evidence_route": [
+            "issue:CA-005",
+            "requirement:REQ-CA-001"
+          ],
+          "mandatory": false,
+          "rank": 2,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 5,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-009",
+          "evidence_route": [
+            "issue:CA-005",
+            "requirement:REQ-CA-009"
+          ],
+          "mandatory": false,
+          "rank": 3,
+          "rationale": "declared requirement",
+          "score": {
+            "anchor": 55,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 2
+          }
+        },
+        {
+          "artifact_id": "artifact:source:src/agent_demo/context_atlas/build.py",
+          "evidence_route": [
+            "issue:CA-005",
+            "source:src/agent_demo/context_atlas/build.py"
+          ],
+          "mandatory": false,
+          "rank": 4,
+          "rationale": "declared implementation",
+          "score": {
+            "anchor": 1,
+            "kind": "source",
+            "path": "src/agent_demo/context_atlas/build.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:test:tests/test_context_atlas_build.py",
+          "evidence_route": [
+            "issue:CA-005",
+            "test:tests/test_context_atlas_build.py"
+          ],
+          "mandatory": false,
+          "rank": 5,
+          "rationale": "declared test",
+          "score": {
+            "anchor": 1,
+            "kind": "test",
+            "path": "tests/test_context_atlas_build.py",
+            "tier": 3
+          }
+        },
+        {
+          "artifact_id": "artifact:issue:CA-002",
+          "evidence_route": [
+            "issue:CA-005",
+            "issue:CA-002"
+          ],
+          "mandatory": false,
+          "rank": 6,
+          "rationale": "declared dependency",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-002-provenance-index.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:issue:CA-003",
+          "evidence_route": [
+            "issue:CA-005",
+            "issue:CA-003"
+          ],
+          "mandatory": false,
+          "rank": 7,
+          "rationale": "declared dependency",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-003-static-graph-application.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:issue:CA-004",
+          "evidence_route": [
+            "issue:CA-005",
+            "issue:CA-004"
+          ],
+          "mandatory": false,
+          "rank": 8,
+          "rationale": "declared dependency",
+          "score": {
+            "anchor": 1,
+            "kind": "issue",
+            "path": "docs/issues/CA-004-context-budget-explorer.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-003",
+          "evidence_route": [
+            "issue:CA-005",
+            "issue:CA-002",
+            "requirement:REQ-CA-003"
+          ],
+          "mandatory": false,
+          "rank": 9,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 17,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-004",
+          "evidence_route": [
+            "issue:CA-005",
+            "issue:CA-003",
+            "requirement:REQ-CA-004"
+          ],
+          "mandatory": false,
+          "rank": 10,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 24,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-005",
+          "evidence_route": [
+            "issue:CA-005",
+            "issue:CA-003",
+            "requirement:REQ-CA-005"
+          ],
+          "mandatory": false,
+          "rank": 11,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 30,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-006",
+          "evidence_route": [
+            "issue:CA-005",
+            "issue:CA-004",
+            "requirement:REQ-CA-006"
+          ],
+          "mandatory": false,
+          "rank": 12,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 37,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-007",
+          "evidence_route": [
+            "issue:CA-005",
+            "issue:CA-004",
+            "requirement:REQ-CA-007"
+          ],
+          "mandatory": false,
+          "rank": 13,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 43,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:requirement:REQ-CA-008",
+          "evidence_route": [
+            "issue:CA-005",
+            "issue:CA-002",
+            "requirement:REQ-CA-008"
+          ],
+          "mandatory": false,
+          "rank": 14,
+          "rationale": "dependency requirement",
+          "score": {
+            "anchor": 49,
+            "kind": "requirement",
+            "path": "docs/requirements.md",
+            "tier": 4
+          }
+        },
+        {
+          "artifact_id": "artifact:document:docs/requirements.md",
+          "evidence_route": [
+            "issue:CA-005",
+            "requirement:REQ-CA-001",
+            "document:docs/requirements.md"
+          ],
+          "mandatory": false,
+          "rank": 15,
+          "rationale": "supporting document reached by requirement provenance",
+          "score": {
+            "anchor": 1,
+            "kind": "document",
+            "path": "docs/requirements.md",
+            "tier": 5
+          }
+        }
+      ],
+      "issue_id": "issue:CA-005"
+    }
+  ],
+  "edges": [
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-001-planning-baseline.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-001",
+      "target": "requirement:REQ-CA-001"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-001-planning-baseline.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-001",
+      "target": "requirement:REQ-CA-009"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "depends_on",
+      "source": "issue:CA-002",
+      "target": "issue:CA-001"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-002",
+      "target": "requirement:REQ-CA-001"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-002",
+      "target": "requirement:REQ-CA-003"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-002",
+      "target": "requirement:REQ-CA-008"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-002",
+      "target": "requirement:REQ-CA-009"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "implements",
+      "source": "issue:CA-002",
+      "target": "source:src/agent_demo/context_atlas/__init__.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "implements",
+      "source": "issue:CA-002",
+      "target": "source:src/agent_demo/context_atlas/build.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "implements",
+      "source": "issue:CA-002",
+      "target": "source:src/agent_demo/context_atlas/model.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "implements",
+      "source": "issue:CA-002",
+      "target": "source:src/agent_demo/context_atlas/parse.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-002-provenance-index.md"
+      },
+      "kind": "tests",
+      "source": "issue:CA-002",
+      "target": "test:tests/test_context_atlas_index.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-003-static-graph-application.md"
+      },
+      "kind": "depends_on",
+      "source": "issue:CA-003",
+      "target": "issue:CA-002"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-003-static-graph-application.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-003",
+      "target": "requirement:REQ-CA-004"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-003-static-graph-application.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-003",
+      "target": "requirement:REQ-CA-005"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-004-context-budget-explorer.md"
+      },
+      "kind": "depends_on",
+      "source": "issue:CA-004",
+      "target": "issue:CA-002"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-004-context-budget-explorer.md"
+      },
+      "kind": "depends_on",
+      "source": "issue:CA-004",
+      "target": "issue:CA-003"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-004-context-budget-explorer.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-004",
+      "target": "requirement:REQ-CA-006"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-004-context-budget-explorer.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-004",
+      "target": "requirement:REQ-CA-007"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-004-context-budget-explorer.md"
+      },
+      "kind": "implements",
+      "source": "issue:CA-004",
+      "target": "source:src/agent_demo/context_atlas/context_budget.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-004-context-budget-explorer.md"
+      },
+      "kind": "tests",
+      "source": "issue:CA-004",
+      "target": "test:tests/test_context_budget.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-005-pages-release.md"
+      },
+      "kind": "depends_on",
+      "source": "issue:CA-005",
+      "target": "issue:CA-002"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-005-pages-release.md"
+      },
+      "kind": "depends_on",
+      "source": "issue:CA-005",
+      "target": "issue:CA-003"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-005-pages-release.md"
+      },
+      "kind": "depends_on",
+      "source": "issue:CA-005",
+      "target": "issue:CA-004"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-005-pages-release.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-005",
+      "target": "requirement:REQ-CA-001"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-005-pages-release.md"
+      },
+      "kind": "addresses",
+      "source": "issue:CA-005",
+      "target": "requirement:REQ-CA-009"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-005-pages-release.md"
+      },
+      "kind": "implements",
+      "source": "issue:CA-005",
+      "target": "source:src/agent_demo/context_atlas/build.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "docs/issues/CA-005-pages-release.md"
+      },
+      "kind": "tests",
+      "source": "issue:CA-005",
+      "target": "test:tests/test_context_atlas_build.py"
+    },
+    {
+      "evidence": {
+        "line_end": 3,
+        "line_start": 3,
+        "path": "tests/test_context_atlas_build.py"
+      },
+      "kind": "imports",
+      "source": "test:tests/test_context_atlas_build.py",
+      "target": "source:src/agent_demo/context_atlas/build.py"
+    },
+    {
+      "evidence": {
+        "line_end": 6,
+        "line_start": 6,
+        "path": "tests/test_context_atlas_index.py"
+      },
+      "kind": "imports",
+      "source": "test:tests/test_context_atlas_index.py",
+      "target": "source:src/agent_demo/context_atlas/build.py"
+    },
+    {
+      "evidence": {
+        "line_end": 7,
+        "line_start": 7,
+        "path": "tests/test_context_atlas_index.py"
+      },
+      "kind": "imports",
+      "source": "test:tests/test_context_atlas_index.py",
+      "target": "source:src/agent_demo/context_atlas/model.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "tests/test_context_budget.py"
+      },
+      "kind": "imports",
+      "source": "test:tests/test_context_budget.py",
+      "target": "source:src/agent_demo/context_atlas/context_budget.py"
+    },
+    {
+      "evidence": {
+        "line_end": 6,
+        "line_start": 6,
+        "path": "tests/test_context_budget.py"
+      },
+      "kind": "imports",
+      "source": "test:tests/test_context_budget.py",
+      "target": "source:src/agent_demo/context_atlas/model.py"
+    },
+    {
+      "evidence": {
+        "line_end": 1,
+        "line_start": 1,
+        "path": "tests/test_environment.py"
+      },
+      "kind": "imports",
+      "source": "test:tests/test_environment.py",
+      "target": "source:src/agent_demo/__init__.py"
+    }
+  ],
+  "nodes": [
+    {
+      "content_hash": "f6d1c3b720d66fb21719f6082e70c465f66036c41dec33836be6d8cd3a3ae422",
+      "estimated_cost": 1163,
+      "excerpt": "# Context Atlas architecture  ## Overview  The repository contains two products: a deterministic Python build pipeline and a static browser application. The pipeline consumes tracked content and checked-in site assets, validates an explicit",
+      "id": "document:docs/architecture.md",
+      "kind": "document",
+      "label": "architecture",
+      "line_end": 104,
+      "line_start": 1,
+      "path": "docs/architecture.md"
+    },
+    {
+      "content_hash": "733b675a1dc674c73a2d4a52660480d908bb80fcd5ff20f86be62b2a2adc7837",
+      "estimated_cost": 212,
+      "excerpt": "# DEC-CA-001 — Tracked issue drafts are the issue source  ## Status  Accepted for the planned implementation.  ## Context  The graph must represent GitHub issues but must run as a reproducible static site. Fetching the GitHub API during bro",
+      "id": "document:docs/decisions/DEC-CA-001-reproducible-issue-source.md",
+      "kind": "document",
+      "label": "DEC-CA-001-reproducible-issue-source",
+      "line_end": 25,
+      "line_start": 1,
+      "path": "docs/decisions/DEC-CA-001-reproducible-issue-source.md"
+    },
+    {
+      "content_hash": "b74bbe0a6fea9130fc757c749bee7600219536242cf287e855da9017037a26fb",
+      "estimated_cost": 227,
+      "excerpt": "# DEC-CA-002 — Standard-library build and static Pages delivery  ## Status  Accepted for the planned implementation.  ## Decision  Use Python's standard library for repository parsing, validation, data generation, file copying, and hashing.",
+      "id": "document:docs/decisions/DEC-CA-002-static-site-and-build.md",
+      "kind": "document",
+      "label": "DEC-CA-002-static-site-and-build",
+      "line_end": 26,
+      "line_start": 1,
+      "path": "docs/decisions/DEC-CA-002-static-site-and-build.md"
+    },
+    {
+      "content_hash": "3c3b4773b06a6ff309d8d3a9f85683c9e89fd755887b1beb12c01d160882adbe",
+      "estimated_cost": 94,
+      "excerpt": "# Evidence records  After a published issue is successfully implemented, create `docs/evidence/issue-N.md`. The record must identify the issue, requirements and decisions addressed, context consulted, changed files, tests, exact validation ",
+      "id": "document:docs/evidence/README.md",
+      "kind": "document",
+      "label": "README",
+      "line_end": 8,
+      "line_start": 1,
+      "path": "docs/evidence/README.md"
+    },
+    {
+      "content_hash": "3d2a24f7c32dbd95c37af36849a9b8bb56f9812a9edeeeb0cfec497dcd3ad0bf",
+      "estimated_cost": 621,
+      "excerpt": "# Issue #2 evidence — Build deterministic repository provenance index  - **Issue:** [#2 — Build deterministic repository provenance index](https://github.com/virgil-barnard/agent_demo/issues/2) - **Requirements addressed:** REQ-CA-001, REQ-",
+      "id": "document:docs/evidence/issue-2.md",
+      "kind": "document",
+      "label": "issue-2",
+      "line_end": 49,
+      "line_start": 1,
+      "path": "docs/evidence/issue-2.md"
+    },
+    {
+      "content_hash": "61188282133b6aef3cea337890a79cfca701ef45d598151b2eacad68d5b742cb",
+      "estimated_cost": 616,
+      "excerpt": "# Issue 3 evidence — Implement static provenance graph application  - **Issue:** [#3 — Implement static provenance graph application](https://github.com/virgil-barnard/agent_demo/issues/3) - **Requirements addressed:** REQ-CA-004 (distinct ",
+      "id": "document:docs/evidence/issue-3.md",
+      "kind": "document",
+      "label": "issue-3",
+      "line_end": 54,
+      "line_start": 1,
+      "path": "docs/evidence/issue-3.md"
+    },
+    {
+      "content_hash": "85315042809b61b5ddfc62e10f31fef76eee979db0089f3331a183e2ed50a376",
+      "estimated_cost": 700,
+      "excerpt": "# Issue 4 evidence — Add deterministic context-budget explorer  - **Issue:** [#4 — Add deterministic context-budget explorer](https://github.com/virgil-barnard/agent_demo/issues/4) - **Requirements addressed:** REQ-CA-006 (deterministic con",
+      "id": "document:docs/evidence/issue-4.md",
+      "kind": "document",
+      "label": "issue-4",
+      "line_end": 53,
+      "line_start": 1,
+      "path": "docs/evidence/issue-4.md"
+    },
+    {
+      "content_hash": "c2c75aca763a76c27d0c362f357b4fcaacd5f864e03cfa4bc06145970999eb9a",
+      "estimated_cost": 701,
+      "excerpt": "# Issue 5 evidence — Package, verify, and deploy the Pages demonstration  - **Issue:** [#5 — Package, verify, and deploy the Pages demonstration](https://github.com/virgil-barnard/agent_demo/issues/5) - **Requirements addressed:** REQ-CA-00",
+      "id": "document:docs/evidence/issue-5.md",
+      "kind": "document",
+      "label": "issue-5",
+      "line_end": 60,
+      "line_start": 1,
+      "path": "docs/evidence/issue-5.md"
+    },
+    {
+      "content_hash": "aba3ec3d5f2869739711e5accb1552472dcd5a5ed82969c842ad80b7f1e1019e",
+      "estimated_cost": 717,
+      "excerpt": "# CA-001 — Establish Context Atlas planning contracts  <!-- context-atlas github_state: closed implementation_state: complete -->  **Proposed labels:** `agent-task`, `type:documentation`, `type:architecture`, `priority:P1`   **GitHub issue:",
+      "id": "document:docs/issues/CA-001-planning-baseline.md",
+      "kind": "document",
+      "label": "CA-001-planning-baseline",
+      "line_end": 84,
+      "line_start": 1,
+      "path": "docs/issues/CA-001-planning-baseline.md"
+    },
+    {
+      "content_hash": "3b152f2c55cddb98dbd1e5b69761a1fbcfa2464788147d1a729b2396bbebbd1c",
+      "estimated_cost": 869,
+      "excerpt": "# CA-002 — Build deterministic repository provenance index  <!-- context-atlas github_state: open implementation_state: in_progress -->  **Proposed labels:** `agent-task`, `type:feature`, `type:architecture`, `priority:P1`   **GitHub issue:",
+      "id": "document:docs/issues/CA-002-provenance-index.md",
+      "kind": "document",
+      "label": "CA-002-provenance-index",
+      "line_end": 85,
+      "line_start": 1,
+      "path": "docs/issues/CA-002-provenance-index.md"
+    },
+    {
+      "content_hash": "6d34ea43dd91cffc93d4fe92865caf2d21116cbeeabc9397004fcf1ef1fd89af",
+      "estimated_cost": 739,
+      "excerpt": "# CA-003 — Implement static provenance graph application  <!-- context-atlas github_state: draft implementation_state: planned -->  **Proposed labels:** `agent-task`, `type:feature`, `priority:P1`   **GitHub issue:** [#3](https://github.com",
+      "id": "document:docs/issues/CA-003-static-graph-application.md",
+      "kind": "document",
+      "label": "CA-003-static-graph-application",
+      "line_end": 82,
+      "line_start": 1,
+      "path": "docs/issues/CA-003-static-graph-application.md"
+    },
+    {
+      "content_hash": "af9a48c127d5f200139a27291c0f1d054b78b28b1eca6abfeedf8d5ffcfd308c",
+      "estimated_cost": 832,
+      "excerpt": "# CA-004 — Add deterministic context-budget explorer  <!-- context-atlas github_state: open implementation_state: in_progress -->  **Proposed labels:** `agent-task`, `type:feature`, `type:test`, `priority:P1`   **GitHub issue:** [#4](https:",
+      "id": "document:docs/issues/CA-004-context-budget-explorer.md",
+      "kind": "document",
+      "label": "CA-004-context-budget-explorer",
+      "line_end": 86,
+      "line_start": 1,
+      "path": "docs/issues/CA-004-context-budget-explorer.md"
+    },
+    {
+      "content_hash": "0d1b870d96d31997f6cb1748a41960c97561f24f65df9b0c71343293ea051067",
+      "estimated_cost": 900,
+      "excerpt": "# CA-005 — Package, verify, and deploy the Pages demonstration  <!-- context-atlas github_state: open implementation_state: complete -->  **Proposed labels:** `agent-task`, `type:integration`, `priority:P1`   **GitHub issue:** [#5](https://",
+      "id": "document:docs/issues/CA-005-pages-release.md",
+      "kind": "document",
+      "label": "CA-005-pages-release",
+      "line_end": 91,
+      "line_start": 1,
+      "path": "docs/issues/CA-005-pages-release.md"
+    },
+    {
+      "content_hash": "d36eed6457276d777c0921da4a9e7c1603af94ad70c3b9312c9f4baa7343e73d",
+      "estimated_cost": 533,
+      "excerpt": "# Context Atlas delivery plan  The plan is intentionally dependency-ordered so an implementation agent can take one bounded issue at a time. Local drafts mirror the published GitHub issues.  | Planning ID | GitHub issue | Outcome | Depends ",
+      "id": "document:docs/plan.md",
+      "kind": "document",
+      "label": "plan",
+      "line_end": 29,
+      "line_start": 1,
+      "path": "docs/plan.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 776,
+      "excerpt": "# Context Atlas requirements  ## Product requirements  ### REQ-CA-001 — Static provenance graph  The build shall produce a static GitHub-Pages-compatible application and a versioned graph-data file from tracked repository inputs. It shall w",
+      "id": "document:docs/requirements.md",
+      "kind": "document",
+      "label": "requirements",
+      "line_end": 74,
+      "line_start": 1,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "0441656072c9ebd00b53649febcbb3a2a69527c9960a390d3d3e32c89748083e",
+      "estimated_cost": 517,
+      "excerpt": "# Context Atlas vision  ## Purpose  Context Atlas is a static GitHub Pages demonstration of issue-driven autonomous development. It turns this repository's tracked planning documents, requirements, issue drafts, source files, and tests into",
+      "id": "document:docs/vision.md",
+      "kind": "document",
+      "label": "vision",
+      "line_end": 45,
+      "line_start": 1,
+      "path": "docs/vision.md"
+    },
+    {
+      "content_hash": "aba3ec3d5f2869739711e5accb1552472dcd5a5ed82969c842ad80b7f1e1019e",
+      "estimated_cost": 717,
+      "excerpt": "# CA-001 — Establish Context Atlas planning contracts  <!-- context-atlas github_state: closed implementation_state: complete -->  **Proposed labels:** `agent-task`, `type:documentation`, `type:architecture`, `priority:P1`   **GitHub issue:",
+      "github_state": "closed",
+      "id": "issue:CA-001",
+      "implementation_state": "complete",
+      "kind": "issue",
+      "label": "Establish Context Atlas planning contracts",
+      "line_end": 84,
+      "line_start": 1,
+      "path": "docs/issues/CA-001-planning-baseline.md"
+    },
+    {
+      "content_hash": "3b152f2c55cddb98dbd1e5b69761a1fbcfa2464788147d1a729b2396bbebbd1c",
+      "estimated_cost": 869,
+      "excerpt": "# CA-002 — Build deterministic repository provenance index  <!-- context-atlas github_state: open implementation_state: in_progress -->  **Proposed labels:** `agent-task`, `type:feature`, `type:architecture`, `priority:P1`   **GitHub issue:",
+      "github_state": "open",
+      "id": "issue:CA-002",
+      "implementation_state": "in_progress",
+      "kind": "issue",
+      "label": "Build deterministic repository provenance index",
+      "line_end": 85,
+      "line_start": 1,
+      "path": "docs/issues/CA-002-provenance-index.md"
+    },
+    {
+      "content_hash": "6d34ea43dd91cffc93d4fe92865caf2d21116cbeeabc9397004fcf1ef1fd89af",
+      "estimated_cost": 739,
+      "excerpt": "# CA-003 — Implement static provenance graph application  <!-- context-atlas github_state: draft implementation_state: planned -->  **Proposed labels:** `agent-task`, `type:feature`, `priority:P1`   **GitHub issue:** [#3](https://github.com",
+      "github_state": "draft",
+      "id": "issue:CA-003",
+      "implementation_state": "planned",
+      "kind": "issue",
+      "label": "Implement static provenance graph application",
+      "line_end": 82,
+      "line_start": 1,
+      "path": "docs/issues/CA-003-static-graph-application.md"
+    },
+    {
+      "content_hash": "af9a48c127d5f200139a27291c0f1d054b78b28b1eca6abfeedf8d5ffcfd308c",
+      "estimated_cost": 832,
+      "excerpt": "# CA-004 — Add deterministic context-budget explorer  <!-- context-atlas github_state: open implementation_state: in_progress -->  **Proposed labels:** `agent-task`, `type:feature`, `type:test`, `priority:P1`   **GitHub issue:** [#4](https:",
+      "github_state": "open",
+      "id": "issue:CA-004",
+      "implementation_state": "in_progress",
+      "kind": "issue",
+      "label": "Add deterministic context-budget explorer",
+      "line_end": 86,
+      "line_start": 1,
+      "path": "docs/issues/CA-004-context-budget-explorer.md"
+    },
+    {
+      "content_hash": "0d1b870d96d31997f6cb1748a41960c97561f24f65df9b0c71343293ea051067",
+      "estimated_cost": 900,
+      "excerpt": "# CA-005 — Package, verify, and deploy the Pages demonstration  <!-- context-atlas github_state: open implementation_state: complete -->  **Proposed labels:** `agent-task`, `type:integration`, `priority:P1`   **GitHub issue:** [#5](https://",
+      "github_state": "open",
+      "id": "issue:CA-005",
+      "implementation_state": "complete",
+      "kind": "issue",
+      "label": "Package, verify, and deploy the Pages demonstration",
+      "line_end": 91,
+      "line_start": 1,
+      "path": "docs/issues/CA-005-pages-release.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 68,
+      "excerpt": "### REQ-CA-001 — Static provenance graph  The build shall produce a static GitHub-Pages-compatible application and a versioned graph-data file from tracked repository inputs. It shall work after being served as static files and shall make n",
+      "id": "requirement:REQ-CA-001",
+      "kind": "requirement",
+      "label": "Static provenance graph",
+      "line_end": 10,
+      "line_start": 5,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 70,
+      "excerpt": "### REQ-CA-002 — Repository artifact coverage  The graph shall represent repository documents, identified requirement sections, tracked issue drafts, Python source files, and Python test files. Nodes shall have stable identifiers and reposi",
+      "id": "requirement:REQ-CA-002",
+      "kind": "requirement",
+      "label": "Repository artifact coverage",
+      "line_end": 16,
+      "line_start": 11,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 78,
+      "excerpt": "### REQ-CA-003 — Meaningful, inspectable relationships  The graph shall represent declared requirement, issue, dependency, implementation, and test relationships, plus Python import relationships where available. Every edge shall include pr",
+      "id": "requirement:REQ-CA-003",
+      "kind": "requirement",
+      "label": "Meaningful, inspectable relationships",
+      "line_end": 23,
+      "line_start": 17,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 68,
+      "excerpt": "### REQ-CA-004 — Distinct progress states  Issue nodes shall expose GitHub state (`draft`, `open`, or `closed`) separately from implementation state (`planned`, `in_progress`, or `complete`). The interface shall use a legend and visually di",
+      "id": "requirement:REQ-CA-004",
+      "kind": "requirement",
+      "label": "Distinct progress states",
+      "line_end": 29,
+      "line_start": 24,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 73,
+      "excerpt": "### REQ-CA-005 — Interactive traceability  The application shall let a viewer filter node types and states, select a node, inspect its metadata and adjacent relationships, and navigate to provenance evidence sufficient to trace an implement",
+      "id": "requirement:REQ-CA-005",
+      "kind": "requirement",
+      "label": "Interactive traceability",
+      "line_end": 36,
+      "line_start": 30,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 75,
+      "excerpt": "### REQ-CA-006 — Deterministic context-budget explorer  For a selected issue/task and configurable budget, the application shall show a deterministic ranked set of loadable artifact slices. Each recommendation shall state its estimated cost",
+      "id": "requirement:REQ-CA-006",
+      "kind": "requirement",
+      "label": "Deterministic context-budget explorer",
+      "line_end": 42,
+      "line_start": 37,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 71,
+      "excerpt": "### REQ-CA-007 — Visible budget effects  Changing the budget shall visibly update the included and excluded context, total estimated cost, and the next useful threshold. A budget too small for mandatory context shall yield an explicit expla",
+      "id": "requirement:REQ-CA-007",
+      "kind": "requirement",
+      "label": "Visible budget effects",
+      "line_end": 48,
+      "line_start": 43,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 56,
+      "excerpt": "### REQ-CA-008 — Input validation  The builder shall reject malformed metadata, duplicate identifiers, invalid state values, missing referenced paths, and missing referenced node identifiers with actionable diagnostics.",
+      "id": "requirement:REQ-CA-008",
+      "kind": "requirement",
+      "label": "Input validation",
+      "line_end": 54,
+      "line_start": 49,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "edb5ab6021535b73c773a597f2450cc4046bb72ced4a54f060a02aa77c9fd631",
+      "estimated_cost": 204,
+      "excerpt": "### REQ-CA-009 — Reproducible generation  Generated files shall use UTF-8, `/` repository-relative paths, stable IDs, sorted records and JSON keys, and no wall-clock or host-specific data. A test shall prove identical inputs yield byte-iden",
+      "id": "requirement:REQ-CA-009",
+      "kind": "requirement",
+      "label": "Reproducible generation",
+      "line_end": 74,
+      "line_start": 55,
+      "path": "docs/requirements.md"
+    },
+    {
+      "content_hash": "946b420c2b7e81910d826409d191341a8225fa6dfc889c493179f85e6ae26195",
+      "estimated_cost": 30,
+      "excerpt": "\"\"\"Bootstrap package for the agent-driven demonstration project.\"\"\"  __all__ = [\"__version__\"]  __version__ = \"0.1.0\"",
+      "id": "source:src/agent_demo/__init__.py",
+      "kind": "source",
+      "label": "__init__",
+      "line_end": 5,
+      "line_start": 1,
+      "path": "src/agent_demo/__init__.py"
+    },
+    {
+      "content_hash": "db0335e6990a325c9cd4ecede235df5cf8ecfbb86138296e06bd5096640a1b31",
+      "estimated_cost": 21,
+      "excerpt": "\"\"\"Deterministic repository provenance data generation.\"\"\"  __all__: list[str] = []",
+      "id": "source:src/agent_demo/context_atlas/__init__.py",
+      "kind": "source",
+      "label": "__init__",
+      "line_end": 3,
+      "line_start": 1,
+      "path": "src/agent_demo/context_atlas/__init__.py"
+    },
+    {
+      "content_hash": "6dcc00c4efe4b5793c1590c83cdec7f308ecb2121369d3332a36fb5c60d30806",
+      "estimated_cost": 3721,
+      "excerpt": "\"\"\"CLI for deterministic Context Atlas graph generation.  Run ``python -m agent_demo.context_atlas.build --repository-root . --output-dir build``. \"\"\"  from __future__ import annotations  import argparse import hashlib import json import ma",
+      "id": "source:src/agent_demo/context_atlas/build.py",
+      "kind": "source",
+      "label": "build",
+      "line_end": 415,
+      "line_start": 1,
+      "path": "src/agent_demo/context_atlas/build.py"
+    },
+    {
+      "content_hash": "79be3710a8a43d36c892152fb2dedf5539c4649313e8de83d08953d8ff7049f9",
+      "estimated_cost": 954,
+      "excerpt": "\"\"\"Deterministic ranking and packing for Context Atlas context profiles.\"\"\"  from __future__ import annotations  from dataclasses import dataclass  from .model import Artifact   @dataclass(frozen=True) class ContextCandidate:     \"\"\"An arti",
+      "id": "source:src/agent_demo/context_atlas/context_budget.py",
+      "kind": "source",
+      "label": "context_budget",
+      "line_end": 124,
+      "line_start": 1,
+      "path": "src/agent_demo/context_atlas/context_budget.py"
+    },
+    {
+      "content_hash": "b65a7c5d6ed4c795d984969e4b4b511a18dc4027e0e770f5c0ae81767a318bdf",
+      "estimated_cost": 554,
+      "excerpt": "\"\"\"Typed graph records and validation for Context Atlas.\"\"\"  from __future__ import annotations  from dataclasses import asdict, dataclass from typing import Any   class ValidationError(ValueError):     \"\"\"Raised when repository metadata ca",
+      "id": "source:src/agent_demo/context_atlas/model.py",
+      "kind": "source",
+      "label": "model",
+      "line_end": 85,
+      "line_start": 1,
+      "path": "src/agent_demo/context_atlas/model.py"
+    },
+    {
+      "content_hash": "4da1961123102b18adace84a747571776c18ea480b22e542f6f2df0f1a40933e",
+      "estimated_cost": 1451,
+      "excerpt": "\"\"\"Parsing helpers that never import or execute repository source files.\"\"\"  from __future__ import annotations  import ast import re from dataclasses import dataclass from pathlib import Path  from .model import ValidationError  ISSUE_HEAD",
+      "id": "source:src/agent_demo/context_atlas/parse.py",
+      "kind": "source",
+      "label": "parse",
+      "line_end": 151,
+      "line_start": 1,
+      "path": "src/agent_demo/context_atlas/parse.py"
+    },
+    {
+      "content_hash": "b21108eb8be2211727231cd3ee821927fd250981fcf8a815120bd3e2da2a8551",
+      "estimated_cost": 634,
+      "excerpt": "from pathlib import Path  from agent_demo.context_atlas.build import build_graph, publish_pages   def _write(root: Path, relative_path: str, content: str) -> None:     path = root / relative_path     path.parent.mkdir(parents=True, exist_ok",
+      "id": "test:tests/test_context_atlas_build.py",
+      "kind": "test",
+      "label": "test_context_atlas_build",
+      "line_end": 71,
+      "line_start": 1,
+      "path": "tests/test_context_atlas_build.py"
+    },
+    {
+      "content_hash": "b7636bac6b7e43e460eea2757cc4e2eb365db779c83bd3fcf779d433eb5ae0df",
+      "estimated_cost": 1717,
+      "excerpt": "import json from pathlib import Path  import pytest  from agent_demo.context_atlas.build import build_graph, main from agent_demo.context_atlas.model import ValidationError   def _write(root: Path, relative_path: str, text: str) -> None:   ",
+      "id": "test:tests/test_context_atlas_index.py",
+      "kind": "test",
+      "label": "test_context_atlas_index",
+      "line_end": 168,
+      "line_start": 1,
+      "path": "tests/test_context_atlas_index.py"
+    },
+    {
+      "content_hash": "42bff5990e63585ce921375abb6fd179400267309c977f7941affd65072a21e5",
+      "estimated_cost": 356,
+      "excerpt": "from pathlib import Path  WEB_ROOT = Path(__file__).parents[1] / \"web\"   def test_static_application_uses_only_relative_checked_in_assets() -> None:     html = (WEB_ROOT / \"index.html\").read_text(encoding=\"utf-8\")      assert 'href=\"styles.",
+      "id": "test:tests/test_context_atlas_web_contract.py",
+      "kind": "test",
+      "label": "test_context_atlas_web_contract",
+      "line_end": 35,
+      "line_start": 1,
+      "path": "tests/test_context_atlas_web_contract.py"
+    },
+    {
+      "content_hash": "8125eceab0789c22e1eeb09bbc7128a73f60dc9dce80435d49a3c79911324423",
+      "estimated_cost": 741,
+      "excerpt": "from agent_demo.context_atlas.context_budget import (     ContextCandidate,     pack_candidates,     rank_candidates, ) from agent_demo.context_atlas.model import Artifact   def _artifact(identifier: str, kind: str, path: str, cost: int, li",
+      "id": "test:tests/test_context_budget.py",
+      "kind": "test",
+      "label": "test_context_budget",
+      "line_end": 96,
+      "line_start": 1,
+      "path": "tests/test_context_budget.py"
+    },
+    {
+      "content_hash": "4fe77d37c78884ceb4baf0578a74abe2097a056599695cd787a19b029b4930f6",
+      "estimated_cost": 28,
+      "excerpt": "from agent_demo import __version__   def test_package_is_importable() -> None:     assert __version__ == \"0.1.0\"",
+      "id": "test:tests/test_environment.py",
+      "kind": "test",
+      "label": "test_environment",
+      "line_end": 5,
+      "line_start": 1,
+      "path": "tests/test_environment.py"
+    }
+  ],
+  "schema_version": 1
+}
