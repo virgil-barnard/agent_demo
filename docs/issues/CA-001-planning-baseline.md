@@ -1,5 +1,10 @@
 # CA-001 — Establish Context Atlas planning contracts
 
+<!-- context-atlas
+github_state: closed
+implementation_state: complete
+-->
+
 **Proposed labels:** `agent-task`, `type:documentation`, `type:architecture`,
 `priority:P1`  
 **GitHub issue:** [#1](https://github.com/virgil-barnard/agent_demo/issues/1)

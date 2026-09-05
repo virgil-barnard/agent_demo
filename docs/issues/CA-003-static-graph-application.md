@@ -1,5 +1,10 @@
 # CA-003 — Implement static provenance graph application
 
+<!-- context-atlas
+github_state: draft
+implementation_state: planned
+-->
+
 **Proposed labels:** `agent-task`, `type:feature`, `priority:P1`  
 **GitHub issue:** [#3](https://github.com/virgil-barnard/agent_demo/issues/3)
 

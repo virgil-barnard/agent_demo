@@ -1,5 +1,10 @@
 # CA-005 — Package, verify, and deploy the Pages demonstration
 
+<!-- context-atlas
+github_state: draft
+implementation_state: planned
+-->
+
 **Proposed labels:** `agent-task`, `type:integration`, `priority:P1`  
 **GitHub issue:** [#5](https://github.com/virgil-barnard/agent_demo/issues/5)
 

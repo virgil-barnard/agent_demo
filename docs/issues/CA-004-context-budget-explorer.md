@@ -1,5 +1,10 @@
 # CA-004 — Add deterministic context-budget explorer
 
+<!-- context-atlas
+github_state: draft
+implementation_state: planned
+-->
+
 **Proposed labels:** `agent-task`, `type:feature`, `type:test`, `priority:P1`  
 **GitHub issue:** [#4](https://github.com/virgil-barnard/agent_demo/issues/4)
 

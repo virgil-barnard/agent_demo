@@ -1,5 +1,10 @@
 # CA-002 — Build deterministic repository provenance index
 
+<!-- context-atlas
+github_state: open
+implementation_state: in_progress
+-->
+
 **Proposed labels:** `agent-task`, `type:feature`, `type:architecture`, `priority:P1`  
 **GitHub issue:** [#2](https://github.com/virgil-barnard/agent_demo/issues/2)
 
@@ -55,7 +60,6 @@ scripts\check.cmd
 - `src/agent_demo/context_atlas/model.py`
 - `src/agent_demo/context_atlas/parse.py`
 - `tests/test_context_atlas_index.py`
-- `tests/fixtures/context_atlas/` (only deterministic, minimal fixture inputs)
 
 ## Context manifest
 

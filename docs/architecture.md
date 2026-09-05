@@ -82,5 +82,19 @@ the input contract, generate graph data, and copy static assets. The deployment
 workflow will invoke the same build command, upload only its output directory, and
 deploy it with GitHub Pages actions.
 
+The provenance-index entry point is:
+
+```bat
+.venv\Scripts\python.exe -m agent_demo.context_atlas.build --repository-root . --output-dir build
+```
+
+Issue drafts may include a UTF-8 metadata block immediately after their heading to
+override their tracked snapshot states. Its only accepted keys are
+`github_state` (`draft`, `open`, or `closed`) and `implementation_state`
+(`planned`, `in_progress`, or `complete`); absent values default to `draft` and
+`planned`. Planned issue artifacts are prospective and omitted until their issue
+is in progress; otherwise the builder rejects invalid values, duplicate requirement
+or issue IDs, missing declared paths, and graph references to missing nodes.
+
 See [DEC-CA-001](decisions/DEC-CA-001-reproducible-issue-source.md) and
 [DEC-CA-002](decisions/DEC-CA-002-static-site-and-build.md).
