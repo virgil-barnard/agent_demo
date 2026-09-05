@@ -53,6 +53,8 @@
 - The Actions workflow was intentionally removed in
   [`986a106818824e9f305ce6b7529b2b0ff7f19400`](https://github.com/virgil-barnard/agent_demo/commit/986a106818824e9f305ce6b7529b2b0ff7f19400)
   after the repository administrator configured Pages to publish `/docs`.
+- **`/docs` publication commit:** [`8c4216f1803db2a2e65f3c4f50eba889dbd88ed2`](https://github.com/virgil-barnard/agent_demo/commit/8c4216f1803db2a2e65f3c4f50eba889dbd88ed2).
+- **Published artifacts:** [entry point](https://github.com/virgil-barnard/agent_demo/blob/8c4216f1803db2a2e65f3c4f50eba889dbd88ed2/docs/index.html), [graph data](https://github.com/virgil-barnard/agent_demo/blob/8c4216f1803db2a2e65f3c4f50eba889dbd88ed2/docs/graph.json), and [build implementation](https://github.com/virgil-barnard/agent_demo/blob/8c4216f1803db2a2e65f3c4f50eba889dbd88ed2/src/agent_demo/context_atlas/build.py).
 
 ## Limitations
 

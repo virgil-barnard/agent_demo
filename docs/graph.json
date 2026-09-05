@@ -64,10 +64,10 @@
       "path": "docs/evidence/issue-4.md"
     },
     {
-      "estimated_cost": 701,
+      "estimated_cost": 852,
       "id": "artifact:document:docs/evidence/issue-5.md",
       "kind": "document",
-      "line_end": 60,
+      "line_end": 62,
       "line_start": 1,
       "node_id": "document:docs/evidence/issue-5.md",
       "path": "docs/evidence/issue-5.md"
@@ -1714,13 +1714,13 @@
       "path": "docs/evidence/issue-4.md"
     },
     {
-      "content_hash": "c2c75aca763a76c27d0c362f357b4fcaacd5f864e03cfa4bc06145970999eb9a",
-      "estimated_cost": 701,
+      "content_hash": "5f42636070c1e0a85960957f3cbed9af792d68ba8d73373a50d8040097e38b00",
+      "estimated_cost": 852,
       "excerpt": "# Issue 5 evidence — Package, verify, and deploy the Pages demonstration  - **Issue:** [#5 — Package, verify, and deploy the Pages demonstration](https://github.com/virgil-barnard/agent_demo/issues/5) - **Requirements addressed:** REQ-CA-00",
       "id": "document:docs/evidence/issue-5.md",
       "kind": "document",
       "label": "issue-5",
-      "line_end": 60,
+      "line_end": 62,
       "line_start": 1,
       "path": "docs/evidence/issue-5.md"
     },
