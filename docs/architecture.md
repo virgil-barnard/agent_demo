@@ -78,10 +78,11 @@ no external CDN.
 
 ## Build and deployment
 
-A module entry point will accept a repository root and output directory, validate
-the input contract, generate graph data, and copy static assets. The deployment
-workflow will invoke the same build command, upload only its output directory, and
-deploy it with GitHub Pages actions.
+A module entry point accepts a repository root and output directory, validates
+the input contract, generates graph data, and copies static assets. It replaces
+the output directory so every artifact contains only current build output. The
+deployment workflow invokes the same build command, uploads only its output
+directory, and deploys it with GitHub Pages actions.
 
 The provenance-index entry point is:
 

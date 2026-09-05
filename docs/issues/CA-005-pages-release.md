@@ -1,8 +1,8 @@
 # CA-005 — Package, verify, and deploy the Pages demonstration
 
 <!-- context-atlas
-github_state: draft
-implementation_state: planned
+github_state: open
+implementation_state: complete
 -->
 
 **Proposed labels:** `agent-task`, `type:integration`, `priority:P1`  

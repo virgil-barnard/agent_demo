@@ -9,6 +9,7 @@ import argparse
 import hashlib
 import json
 import math
+import shutil
 from pathlib import Path
 
 from .context_budget import ContextCandidate, rank_candidates
@@ -16,6 +17,7 @@ from .model import Artifact, Edge, Evidence, Node, ValidationError, validate_gra
 from .parse import IssueDraft, parse_issue, parse_requirements, python_imports, read_text
 
 SCHEMA_VERSION = 1
+STATIC_ASSET_DIRECTORY = "web"
 
 
 def _cost(text: str) -> int:
@@ -75,8 +77,38 @@ def _import_target(import_name: str, module_nodes: dict[str, str]) -> str | None
     return None
 
 
+def _copy_static_assets(root: Path, output_dir: Path) -> None:
+    """Copy checked-in browser assets to the Pages artifact directory."""
+    asset_root = root / STATIC_ASSET_DIRECTORY
+    if not asset_root.is_dir():
+        raise ValidationError(f"repository root has no {STATIC_ASSET_DIRECTORY} directory: {root}")
+
+    for source_path in sorted(asset_root.rglob("*"), key=lambda path: path.as_posix()):
+        if not source_path.is_file():
+            continue
+        destination = output_dir / source_path.relative_to(asset_root)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source_path, destination)
+
+
+def _prepare_output_directory(root: Path, output_dir: Path) -> Path:
+    """Return an empty output directory without permitting source deletion."""
+    resolved_output = output_dir.resolve()
+    asset_root = (root / STATIC_ASSET_DIRECTORY).resolve()
+    if resolved_output in (root, asset_root) or resolved_output.is_relative_to(asset_root):
+        raise ValidationError(
+            "output directory must not be the repository root or static asset directory"
+        )
+    if resolved_output.exists():
+        if not resolved_output.is_dir():
+            raise ValidationError(f"output path is not a directory: {resolved_output}")
+        shutil.rmtree(resolved_output)
+    resolved_output.mkdir(parents=True)
+    return resolved_output
+
+
 def build_graph(repository_root: Path, output_dir: Path) -> Path:
-    """Validate approved repository inputs and write ``graph.json`` to output_dir."""
+    """Build a self-contained Pages artifact and return its ``graph.json`` path."""
     root = repository_root.resolve()
     if not (root / "docs").is_dir():
         raise ValidationError(f"repository root has no docs directory: {root}")
@@ -333,8 +365,9 @@ def build_graph(repository_root: Path, output_dir: Path) -> Path:
         ],
         "context_profiles": context_profiles,
     }
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_path = output_dir / "graph.json"
+    artifact_dir = _prepare_output_directory(root, output_dir)
+    _copy_static_assets(root, artifact_dir)
+    output_path = artifact_dir / "graph.json"
     output_path.write_text(
         json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",

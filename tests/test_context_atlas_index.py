@@ -14,6 +14,9 @@ def _write(root: Path, relative_path: str, text: str) -> None:
 
 
 def _repository(root: Path) -> None:
+    _write(root, "web/index.html", "<!doctype html>\n")
+    _write(root, "web/styles.css", "body {}\n")
+    _write(root, "web/app.js", 'const GRAPH_DATA_URL = "graph.json";\n')
     _write(root, "docs/requirements.md", "# Requirements\n\n### REQ-CA-001 — Graph\n\nA graph.\n")
     _write(
         root,
