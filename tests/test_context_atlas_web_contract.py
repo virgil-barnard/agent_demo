@@ -25,6 +25,9 @@ def test_application_contract_covers_graph_filters_states_and_evidence() -> None
     assert "fetch(GRAPH_DATA_URL)" in javascript
     assert "edge.evidence.path" in javascript
     assert "edge.evidence.line_start" in javascript
+    assert "Context budget explorer" in javascript
+    assert "estimated tokens" in javascript
+    assert "Next useful threshold" in javascript
     assert "KIND_ORDER" in javascript
     for github_state in ("draft", "open", "closed"):
         assert f"github-{github_state}" in css

@@ -11,6 +11,7 @@ import json
 import math
 from pathlib import Path
 
+from .context_budget import ContextCandidate, rank_candidates
 from .model import Artifact, Edge, Evidence, Node, ValidationError, validate_graph
 from .parse import IssueDraft, parse_issue, parse_requirements, python_imports, read_text
 
@@ -208,7 +209,7 @@ def build_graph(repository_root: Path, output_dir: Path) -> Path:
                 )
 
     for node in nodes:
-        if node.kind in {"requirement", "issue", "source", "test"}:
+        if node.kind in {"document", "requirement", "issue", "source", "test"}:
             artifacts.append(
                 Artifact(
                     f"artifact:{node.id}",
@@ -222,31 +223,93 @@ def build_graph(repository_root: Path, output_dir: Path) -> Path:
             )
 
     artifact_by_node = {artifact.node_id: artifact for artifact in artifacts}
+    issues_by_id = {issue.id: issue for issue, _ in issue_drafts}
     context_profiles = []
     for issue, _ in sorted(issue_drafts, key=lambda item: item[0].id):
-        candidate_nodes = [f"issue:{issue.id}"]
-        candidate_nodes.extend(f"requirement:{requirement}" for requirement in issue.requirements)
-        candidate_nodes.extend(
-            edge.target
-            for edge in edges
-            if edge.source == f"issue:{issue.id}"
-            and edge.kind in {"implements", "tests", "depends_on"}
+        candidate_specs = [(f"issue:{issue.id}", 1, "selected issue", True, (f"issue:{issue.id}",))]
+        candidate_specs.extend(
+            (
+                f"requirement:{requirement}",
+                2,
+                "declared requirement",
+                False,
+                (f"issue:{issue.id}", f"requirement:{requirement}"),
+            )
+            for requirement in issue.requirements
         )
+        candidate_specs.extend(
+            (
+                f"source:{path}",
+                3,
+                "declared implementation",
+                False,
+                (f"issue:{issue.id}", f"source:{path}"),
+            )
+            for path in issue.implementation_paths
+        )
+        candidate_specs.extend(
+            (f"test:{path}", 3, "declared test", False, (f"issue:{issue.id}", f"test:{path}"))
+            for path in issue.test_paths
+        )
+        for dependency_id in issue.dependencies:
+            dependency = issues_by_id.get(dependency_id)
+            candidate_specs.append(
+                (
+                    f"issue:{dependency_id}",
+                    4,
+                    "declared dependency",
+                    False,
+                    (f"issue:{issue.id}", f"issue:{dependency_id}"),
+                )
+            )
+            if dependency:
+                candidate_specs.extend(
+                    (
+                        f"requirement:{requirement}",
+                        4,
+                        "dependency requirement",
+                        False,
+                        (
+                            f"issue:{issue.id}",
+                            f"issue:{dependency_id}",
+                            f"requirement:{requirement}",
+                        ),
+                    )
+                    for requirement in dependency.requirements
+                )
+        for requirement in issue.requirements:
+            requirement_artifact = artifact_by_node.get(f"requirement:{requirement}")
+            if requirement_artifact:
+                document_node = f"document:{requirement_artifact.path}"
+                candidate_specs.append(
+                    (
+                        document_node,
+                        5,
+                        "supporting document reached by requirement provenance",
+                        False,
+                        (f"issue:{issue.id}", f"requirement:{requirement}", document_node),
+                    )
+                )
         candidates = []
-        for rank, node_id in enumerate(dict.fromkeys(candidate_nodes), start=1):
+        for node_id, tier, rationale, mandatory, evidence_route in candidate_specs:
             artifact = artifact_by_node.get(node_id)
             if artifact is None:
                 continue
             candidates.append(
-                {
-                    "artifact_id": artifact.id,
-                    "mandatory": rank == 1,
-                    "rank": rank,
-                    "rationale": "selected issue" if rank == 1 else "declared provenance",
-                    "evidence_route": [f"issue:{issue.id}", node_id],
-                }
+                ContextCandidate(artifact, tier, rationale, evidence_route, mandatory)
             )
-        context_profiles.append({"issue_id": f"issue:{issue.id}", "candidates": candidates})
+        unique_candidates = {}
+        for candidate in candidates:
+            unique_candidates.setdefault(candidate.artifact.id, candidate)
+        context_profiles.append(
+            {
+                "issue_id": f"issue:{issue.id}",
+                "candidates": [
+                    candidate.to_dict()
+                    for candidate in rank_candidates(list(unique_candidates.values()))
+                ],
+            }
+        )
 
     validate_graph(nodes, edges, artifacts)
     data = {

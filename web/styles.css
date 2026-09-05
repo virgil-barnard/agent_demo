@@ -50,5 +50,9 @@ select { display: block; margin-top: .25rem; padding: .25rem; }
 .detail-list { display: grid; grid-template-columns: max-content 1fr; gap: .4rem .75rem; }
 .detail-list dt { font-weight: 700; }
 .edge-list { padding-left: 1.25rem; }
+.context-explorer { border-top: 1px solid #d8deea; margin-top: 1rem; padding-top: 1rem; }
+.context-explorer input { margin-left: .25rem; max-width: 7rem; padding: .25rem; }
+.context-result ol { margin-top: .25rem; padding-left: 1.5rem; }
+.context-result li { margin-bottom: .45rem; overflow-wrap: anywhere; }
 code { overflow-wrap: anywhere; }
 @media (max-width: 800px) { .atlas-layout { grid-template-columns: 1fr; } #graph { min-height: 30rem; } }

@@ -18,6 +18,55 @@ const details = document.querySelector("#details");
 const githubFilter = document.querySelector("#github-filter");
 const implementationFilter = document.querySelector("#implementation-filter");
 
+function profileForIssue(issueId) {
+  return (state.data.context_profiles || []).find((profile) => profile.issue_id === issueId);
+}
+
+function renderContextExplorer(issueId) {
+  const profile = profileForIssue(issueId);
+  if (!profile) return;
+  const artifacts = new Map(state.data.artifacts.map((artifact) => [artifact.id, artifact]));
+  const section = document.createElement("section");
+  section.className = "context-explorer";
+  appendText(section, "h3", "Context budget explorer");
+  const budgetLabel = document.createElement("label");
+  budgetLabel.textContent = "Budget (estimated tokens) ";
+  const budget = document.createElement("input");
+  budget.type = "number"; budget.min = "0"; budget.step = "1"; budget.value = "500";
+  budgetLabel.append(budget); section.append(budgetLabel);
+  const result = document.createElement("div"); result.className = "context-result"; section.append(result);
+
+  const render = () => {
+    const limit = Math.max(0, Number.parseInt(budget.value, 10) || 0);
+    const candidates = profile.candidates.map((candidate) => ({ ...candidate, artifact: artifacts.get(candidate.artifact_id) }));
+    const minimum = candidates.filter((candidate) => candidate.mandatory).reduce((total, candidate) => total + candidate.artifact.estimated_cost, 0);
+    result.replaceChildren();
+    if (limit < minimum) {
+      appendText(result, "p", `Mandatory context requires at least ${minimum} estimated tokens; the selected budget is insufficient.`);
+      return;
+    }
+    let total = 0; let threshold = null;
+    const included = []; const excluded = [];
+    candidates.forEach((candidate) => {
+      if (total + candidate.artifact.estimated_cost <= limit) { included.push(candidate); total += candidate.artifact.estimated_cost; }
+      else { excluded.push(candidate); if (threshold === null) threshold = total + candidate.artifact.estimated_cost; }
+    });
+    appendText(result, "p", `${total} estimated tokens included of ${limit}.`);
+    appendText(result, "p", threshold === null ? "All ranked context fits." : `Next useful threshold: ${threshold} estimated tokens.`);
+    [["Included", included], ["Excluded", excluded]].forEach(([heading, items]) => {
+      appendText(result, "h4", heading);
+      const list = document.createElement("ol");
+      items.forEach((candidate) => {
+        const item = document.createElement("li"); const artifact = candidate.artifact;
+        item.textContent = `${artifact.path}:${artifact.line_start}–${artifact.line_end} — ${artifact.estimated_cost} estimated tokens; ${candidate.rationale}; route: ${candidate.evidence_route.join(" → ")}`;
+        list.append(item);
+      });
+      result.append(list);
+    });
+  };
+  budget.addEventListener("input", render); render(); details.append(section);
+}
+
 function element(name, attributes = {}) {
   const node = document.createElementNS(SVG_NAMESPACE, name);
   Object.entries(attributes).forEach(([key, value]) => node.setAttribute(key, value));
@@ -73,6 +122,8 @@ function renderDetails(node) {
   fields.forEach(([label, value]) => { appendText(list, "dt", label); appendText(list, "dd", value); });
   details.append(list);
   if (node.excerpt) appendText(details, "p", node.excerpt);
+
+  if (node.kind === "issue") renderContextExplorer(node.id);
 
   appendText(details, "h3", "Adjacent relationships");
   const adjacent = state.data.edges
@@ -134,7 +185,7 @@ async function loadGraph() {
     const response = await fetch(GRAPH_DATA_URL);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    if (!Array.isArray(data.nodes) || !Array.isArray(data.edges)) throw new Error("graph data has no nodes or edges");
+    if (!Array.isArray(data.nodes) || !Array.isArray(data.edges) || !Array.isArray(data.artifacts)) throw new Error("graph data is missing required records");
     state.data = data;
     configureFilters(); renderGraph();
   } catch (error) {

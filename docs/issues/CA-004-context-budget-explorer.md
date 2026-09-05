@@ -1,8 +1,8 @@
 # CA-004 — Add deterministic context-budget explorer
 
 <!-- context-atlas
-github_state: draft
-implementation_state: planned
+github_state: open
+implementation_state: in_progress
 -->
 
 **Proposed labels:** `agent-task`, `type:feature`, `type:test`, `priority:P1`  
@@ -71,6 +71,7 @@ scripts\check.cmd
 | Read | `docs/architecture.md#context-budget-policy` | Authoritative cost, rank, and packing policy. |
 | Read | `src/agent_demo/context_atlas/build.py` | Existing data-generation integration point. |
 | Read | `web/app.js` | Existing selection interface. |
+| Read | `web/index.html` | Existing semantic details panel that hosts the explorer. |
 | Create | `src/agent_demo/context_atlas/context_budget.py` | Deterministic rank and pack logic. |
 | Create | `tests/test_context_budget.py` | Ranking and budget-boundary tests. |
 | Edit | `web/app.js` | Context explorer controls and rendering. |

@@ -62,11 +62,12 @@ For an issue, the ranker emits a sorted candidate list:
 4. declared dependency issue drafts and their requirements;
 5. architecture and supporting documents reached by declared provenance.
 
-Each candidate includes ordered score components and an evidence route. Ties are
-resolved by score, artifact kind, normalized path, and anchor. The browser greedily
-packs this immutable order without exceeding the selected budget and reports the
-next excluded item and threshold. If mandatory context cannot fit, it reports the
-minimum viable budget.
+Each candidate records score components: policy tier (the numbered order above),
+artifact kind, normalized path, and line anchor, plus an evidence route. Ties are
+resolved by those components in that order. The browser greedily packs this
+immutable order without exceeding the selected budget and reports the first
+excluded item's threshold at the current packed total. If mandatory context cannot
+fit, it reports the minimum viable budget.
 
 ## Static application
 
