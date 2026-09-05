@@ -40,9 +40,15 @@
 - `.venv\Scripts\python.exe -m pytest` — passed.
 - `scripts\check.cmd` — passed.
 
+## Publication
+
+- **Implementation commit:**
+  [`19fb404e26b3c34161004a263527c5e6ecfb2402`](https://github.com/virgil-barnard/agent_demo/commit/19fb404e26b3c34161004a263527c5e6ecfb2402).
+- **Artifacts:** [static application](https://github.com/virgil-barnard/agent_demo/tree/19fb404e26b3c34161004a263527c5e6ecfb2402/web),
+  [contract tests](https://github.com/virgil-barnard/agent_demo/blob/19fb404e26b3c34161004a263527c5e6ecfb2402/tests/test_context_atlas_web_contract.py),
+  and this evidence record.
+
 ## Limitations
 
 - Browser interaction is implemented in vanilla JavaScript; repository validation
   checks its static contract but does not include a browser automation harness.
-- Commit SHA and commit-specific artifact links are recorded in the issue comment
-  after publication.
