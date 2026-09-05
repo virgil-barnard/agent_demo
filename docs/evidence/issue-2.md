@@ -38,8 +38,8 @@ GitHub and implementation state snapshots in the documented metadata block.
 - `.venv\Scripts\python.exe -m pytest` — 8 passed.
 - `scripts\check.cmd` — passed (environment integrity, dependency check,
   formatting, linting, tests, and compilation).
-- The publication commit SHA is recorded in the issue completion comment after it
-  reaches `main`.
+- **Implementation commit:**
+  [`018eda7934f2584b7621a1b8b21cc90b8bc06885`](https://github.com/virgil-barnard/agent_demo/commit/018eda7934f2584b7621a1b8b21cc90b8bc06885).
 
 ## Limitations
 
